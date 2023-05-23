@@ -11,7 +11,7 @@ function ApplicationsTransactions() {
   return (
     <>
       <Head>
-        <title>Transactions - Applications</title>
+        <title>YTcustumiser - Custum Videos</title>
       </Head>
       <PageTitleWrapper>
         <PageHeader />

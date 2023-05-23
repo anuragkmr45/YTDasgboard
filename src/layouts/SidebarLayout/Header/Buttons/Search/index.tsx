@@ -170,7 +170,7 @@ function HeaderSearch() {
                       sx={{ fontWeight: 'bold' }}
                       variant="body2"
                     >
-                      Dashboard for Healthcare Platform
+                      Dashboard for Youtube Account Reach
                     </Link>
                   </Box>
                   <Typography
@@ -182,13 +182,13 @@ function HeaderSearch() {
                     }}
                   >
                     This page contains all the necessary information for
-                    managing all hospital staff.
+                    managing all Packages Of Thumbnai
                   </Typography>
                 </Box>
                 <ChevronRightTwoToneIcon />
               </ListItem>
               <Divider sx={{ my: 1 }} component="li" />
-              <ListItem button>
+              <ListItem >
                 <Hidden smDown>
                   <ListItemAvatar>
                     <Avatar
@@ -212,16 +212,6 @@ function HeaderSearch() {
                       Example Projects Application
                     </Link>
                   </Box>
-                  <Typography
-                    component="span"
-                    variant="body2"
-                    sx={{
-                      color: (theme: Theme) =>
-                        lighten(theme.palette.secondary.main, 0.5)
-                    }}
-                  >
-                    This is yet another search result pointing to a app page.
-                  </Typography>
                 </Box>
                 <ChevronRightTwoToneIcon />
               </ListItem>

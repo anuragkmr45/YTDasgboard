@@ -47,8 +47,6 @@ export type LinkProps = {
 } & Omit<NextLinkComposedProps, 'to' | 'linkAs' | 'href'> &
   Omit<MuiLinkProps, 'href'>;
 
-// A styled version of the Next.js Link component:
-// https://nextjs.org/docs/api-reference/next/link
 const Link = React.forwardRef<HTMLAnchorElement, LinkProps>(function Link(
   props,
   ref

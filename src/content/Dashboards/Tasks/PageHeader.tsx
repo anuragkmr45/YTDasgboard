@@ -1,13 +1,11 @@
 import {
   Typography,
-  Button,
   Box,
   alpha,
   lighten,
   Avatar,
   styled
 } from '@mui/material';
-import DocumentScannerTwoToneIcon from '@mui/icons-material/DocumentScannerTwoTone';
 import AddAlertTwoToneIcon from '@mui/icons-material/AddAlertTwoTone';
 
 const AvatarPageTitle = styled(Avatar)(
@@ -56,15 +54,9 @@ function PageHeader() {
             Welcome, {user.name}!
           </Typography>
           <Typography variant="subtitle2">
-            Manage your day to day tasks with style! Enjoy a well built UI
-            system.
+          Automate Your Custom Thumbnail
           </Typography>
         </Box>
-      </Box>
-      <Box mt={{ xs: 3, md: 0 }}>
-        <Button variant="contained" startIcon={<DocumentScannerTwoToneIcon />}>
-          Export
-        </Button>
       </Box>
     </Box>
   );

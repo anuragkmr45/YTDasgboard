@@ -27,7 +27,7 @@ function ManagementUserProfile() {
   return (
     <>
       <Head>
-        <title>User Details - Management</title>
+        <title>YTCustomiser - User Settings</title>
       </Head>
       <Container sx={{ mt: 3 }} maxWidth="lg">
         <Grid

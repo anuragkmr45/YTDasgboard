@@ -7,7 +7,7 @@ import {
   styled
 } from '@mui/material';
 
-import Link from 'src/components/Link';
+import List from "@/components/List"
 
 const TypographyH1 = styled(Typography)(
   ({ theme }) => `
@@ -35,66 +35,6 @@ const LabelWrapper = styled(Box)(
 `
 );
 
-const MuiAvatar = styled(Box)(
-  ({ theme }) => `
-    width: ${theme.spacing(8)};
-    height: ${theme.spacing(8)};
-    border-radius: ${theme.general.borderRadius};
-    background-color: #e5f7ff;
-    flex-shrink: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto ${theme.spacing(2)};
-
-    img {
-      width: 60%;
-      height: 60%;
-      display: block;
-    }
-`
-);
-
-const TsAvatar = styled(Box)(
-  ({ theme }) => `
-    width: ${theme.spacing(8)};
-    height: ${theme.spacing(8)};
-    border-radius: ${theme.general.borderRadius};
-    background-color: #dfebf6;
-    flex-shrink: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto ${theme.spacing(2)};
-
-    img {
-      width: 60%;
-      height: 60%;
-      display: block;
-    }
-`
-);
-
-const NextJsAvatar = styled(Box)(
-  ({ theme }) => `
-  width: ${theme.spacing(8)};
-  height: ${theme.spacing(8)};
-  border-radius: ${theme.general.borderRadius};
-  background-color: #dfebf6;
-  flex-shrink: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto ${theme.spacing(2)};
-
-    img {
-      width: 60%;
-      height: 60%;
-      display: block;
-    }
-`
-);
-
 function Hero() {
   return (
     <Container maxWidth="lg" sx={{ textAlign: 'center' }}>
@@ -117,74 +57,57 @@ function Hero() {
           >
             Introducing the <b>Real Time Automation YouTube Thumbnail Customiser</b>, a cutting-edge tool crafted by <a href="http://progeeks.in/">ProGeeks</a>. This innovative solution revolutionizes the way YouTubers create captivating thumbnails for their videos. With real-time automation at its core, this tool empowers content creators to dynamically customize their thumbnails effortlessly.
           </TypographyH2>
-          <Button
+          {/* <Button
             component={Link}
             href="/dashboards/tasks"
             size="large"
-            variant="contained"
+            variant="text"
           >
-            Browse Live Preview
-          </Button>
+            Browse Our Services
+          </Button> */}
           <Button
             sx={{ ml: 2 }}
             component="a"
             target="_blank"
             rel="noopener"
-            href="https://bloomui.com/product/tokyo-free-black-react-nextjs-material-ui-admin-dashboard"
+            href="https://progeeks.in/"
             size="large"
-            variant="text"
+            variant="contained"
           >
-            Key Features
+            Browse Our Services
           </Button>
+          <Box my={2}>
+            <h1>Pricing 1</h1>
           <Grid container spacing={3} mt={5}>
             <Grid item md={4}>
-              <MuiAvatar>
-                <img
-                  src="/static/images/logo/material-ui.svg"
-                  alt="Material-UI"
-                />
-              </MuiAvatar>
+                <h1>Price 1</h1>
               <Typography variant="h4">
                 <Box sx={{ pb: 2 }}>
-                  <b>Powered by MUI (Material-UI)</b>
+                  <b>Package name</b>
                 </Box>
-                <Typography component="span" variant="subtitle2">
-                  A simple and customizable component library to build faster,
-                  beautiful, and accessible React apps.
-                </Typography>
+                <List />
               </Typography>
-            </Grid>
+            </Grid>            
             <Grid item md={4}>
-              <NextJsAvatar>
-                <img src="/static/images/logo/next-js.svg" alt="NextJS" />
-              </NextJsAvatar>
+                <h1>Price 1</h1>
               <Typography variant="h4">
                 <Box sx={{ pb: 2 }}>
-                  <b>Built with Next.js</b>
+                  <b>Package name</b>
                 </Box>
-                <Typography component="span" variant="subtitle2">
-                  Next.js gives you the best developer experience with all the
-                  features you need for production.
-                </Typography>
+                <List />
               </Typography>
-            </Grid>
+            </Grid>            
             <Grid item md={4}>
-              <TsAvatar>
-                <img
-                  src="/static/images/logo/typescript.svg"
-                  alt="Typescript"
-                />
-              </TsAvatar>
+                <h1>Price 1</h1>
               <Typography variant="h4">
                 <Box sx={{ pb: 2 }}>
-                  <b>Built with Typescript</b>
+                  <b>Package name</b>
                 </Box>
-                <Typography component="span" variant="subtitle2">
-                  Tokyo Free Black features a modern technology stack and is built with React + Typescript.
-                </Typography>
+                <List />
               </Typography>
-            </Grid>
+            </Grid>            
           </Grid>
+          </Box>
         </Grid>
       </Grid>
     </Container>
